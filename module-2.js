@@ -103,18 +103,15 @@ function makeStringFromArray(array, delimeter) {
 
 // task 13
 function slugify(title) {
-  // Пиши код ниже этой строки
-
   const normalizedString = title.toLowerCase();
   const words = normalizedString.split(' ');
   const slug = words.join('-');
   return slug;
-  // Пиши код выше этой строки
 }
 
 // task 14
 const fruits = ['яблоко', 'слива', 'груша', 'апельсин', 'банан'];
-// Пиши код ниже этой строки
+
 const firstTwoEls = fruits.slice(0, 2);
 const nonExtremeEls = fruits.slice(1, -1);
 const lastThreeEls = fruits.slice(-3);
@@ -136,34 +133,27 @@ function makeArray(firstArray, secondArray, maxLength) {
   // Пиши код ниже этой строки
   return firstArray.concat(secondArray).slice(0, maxLength);
   // or
-  const newArray = firstArray.concat(secondArray);
+  // const newArray = firstArray.concat(secondArray);
 
-  if (newArray > maxLength) {
-    return newArray.length === maxLength;
-  }
-  return newArray.slice(0, maxLength);
-
-  // Пиши код выше этой строки
+  // if (newArray > maxLength) {
+  //   return newArray.length === maxLength;
+  // }
+  // return newArray.slice(0, maxLength);
 }
 
 // task 18
 function calculateTotal(number) {
-  // Пиши код ниже этой строки
-
   let total = 0;
 
   for (let i = 0; i <= number; i += 1) {
     total += i;
   }
   return total;
-
-  // Пиши код выше этой строки
 }
 // task 19
 const fruits = ['яблоко', 'слива', 'груша', 'апельсин'];
 
 for (let i = 0; i < fruits.length; i += 1) {
-  // Дополни эту строку
   const fruit = fruits[i]; // Дополни эту строку
   console.log(fruit);
 }

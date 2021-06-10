@@ -266,7 +266,7 @@ if (type === 'starter') {
 function getSubscriptionPrice(type) {
   let price;
   // Write your code under this line
-
+  // То есть нельзя сравнить на больше или меньше, только на равенство.
   switch (
     type // Complete this line
   ) {
